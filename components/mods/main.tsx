@@ -3,6 +3,10 @@
 import { useEffect, useState } from "react";
 import { Star } from "lucide-react";
 import { Support } from "./support";
+import { Memberships } from "./memberships";
+import { Shop } from "./shop";
+import { Posts } from "./posts";
+import { Designed } from "./designed";
 
 export const Main = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -46,6 +50,10 @@ export const Main = () => {
                 <p className="text-lg">It’s free and takes less than a minute!</p>
             </div>
             <Support/>
+            <Memberships/>
+            <Shop/>
+            <Posts/>
+            <Designed/>
         </div>
        
     );
